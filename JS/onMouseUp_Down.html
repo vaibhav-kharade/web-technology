@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" onmouseup="onMouseUp()" onmousedown="onMouseDown()"></div>
+    <script>
+        function onMouseUp() {
+           let ele=document.getElementById("box")
+           ele.style.width="400px"
+           ele.style.height="400px"
+           ele.style.backgroundImage="url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg')"
+           ele.style.backgroundRepeat="norepeat"
+           ele.style.backgroundPosition="center"
+           ele.style.backgroundSize="cover"
+        //    ele.style.backgroundColor="blue"
+        //    ele.style.backgroundImage="url('https://upload.wikimedia.org/wikipedia/commons/2/25/Sachin_Tendulkar_at_MRF_Promotion_Event.jpg')"
+        }
+
+        function onMouseDown() {
+           let ele=document.getElementById("box")
+           ele.style.width="400px"
+           ele.style.height="400px"
+           ele.style.backgroundImage="url('https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg')"
+           ele.style.backgroundRepeat="norepeat"
+           ele.style.backgroundPosition="center"
+           ele.style.backgroundSize="cover"
+        //    ele.style.backgroundColor="red"
+        }
+    </script>
+</body>
+</html>

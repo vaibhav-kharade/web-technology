@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="car" id="car" onchange="getChange()">
+        <option value="no-car">select your car</option>
+        <option value="Omini">Omini</option>
+        <option value="Bolero">Bolero</option>
+        <option value="BMW X1">BMW X1</option>BMW X1
+        <option value="Mercedes-Benz ">Mercedes-Benz </option>
+        <option value="Rolls Royas">Rolls Royas</option>
+        <option value="Lamborghini Aventador">Lamborghini Aventador</option>
+        <option value="Farrari SF90 Stradale">Farrari SF90 Stradale</option>
+        <option value="Bugatti Divo">Bugatti Divo</option>
+    </select>
+    <p id="print"></p>
+    <script>
+        function getChange() {
+            let car=document.getElementById("car").value
+            let print=document.getElementById("print")
+            print.innerHTML="Congratulations !!! your selected car is "+car
+            print.style.fontSize="40px"
+            print.style.backgroundColor="red"
+        }
+    </script>
+</body>
+</html>

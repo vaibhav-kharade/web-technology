@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let singer = {
+        album1: {
+          name: "Lata Didi",
+          age: 95,
+          songCount: 5000,
+        },
+        album2: {
+          name: "Sonu Nigam",
+          age: 42,
+          songCount: 20000,
+        },
+        album3: {
+          name: "Udit Narayan",
+          age: 60,
+          songCount: 25000,
+        },
+      }
+    //   console.log(singer);
+    console.log(singer.album1);
+      console.log(singer.album1.name);
+      singer.album3.name="Asha Didi"  //updated obj
+      console.log(singer.album3);
+      singer.album4={                 //New ob j created
+        name:"ranum mandal",
+        age:62,
+        songCount:1,
+      }
+      console.log(singer);
+      singer.album4.cosinger={
+        name:"Himesh Reshmiya",
+        age:49,
+        songCount:20000
+      }
+
+      console.log(singer);
+      console.log(singer.album4.cosinger.name);
+    </script>
+  </body>
+</html>

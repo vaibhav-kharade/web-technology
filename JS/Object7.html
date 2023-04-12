@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj={
+            key1:"value1",
+            key2:"value2",
+            key3:"value3",
+            key4:"value4",
+        }
+        // console.log(obj);
+        //add the keys and value pair
+        // obj.key5="value5"
+        // console.log(obj);
+
+        //delete()
+        // delete(obj.key5)
+        // console.log(obj);
+
+        //keys()
+        // console.log(Object.keys(obj));
+        
+        //values
+        // console.log(Object.values(obj));
+        
+        //entries=to convert into an array
+        // console.log(Object.entries(obj));
+        
+        //seal()=> it is used to lock by using this we cannot add but we can modify already present obj
+        // console.log(Object.seal(obj));
+        // console.log(obj.key5="value4");
+        // // console.log(obj);
+
+        // console.log(obj.key3="updated key");
+        // console.log(obj);
+
+        //freeze()=> It is used to full lock same like seal() but it can not be modify and cannot add new obj
+        // console.log(Object.freeze(obj));
+        // // console.log(obj.key5="add new");
+
+        // console.log(obj.key4="updated");
+        // console.log(obj);
+
+
+        //Assign()=> it is used to merge multiple objects
+        let obj1={
+            key1:"value1",
+            key2:"value2"
+        }
+
+        let obj2={
+            key3:"value3",
+            key4:"value4"
+        }
+        console.log(Object.assign(obj1,obj2));
+        
+    </script>
+</body>
+</html>

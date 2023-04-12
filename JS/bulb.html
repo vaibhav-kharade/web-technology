@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb on off</title>
+</head>
+
+<body>
+    <div id="box"></div>
+    <button class="button" onclick="bulb()" >ON</button>
+    <button class="button" onclick="bulbb()">OFF</button>
+
+    <script>
+        let bulb=function bulb() {
+            let bulb1=document.getElementById("box")
+            bulb1.style.backgroundColor=prompt("enter your favourite color")
+            bulb1.innerHTML="bulb On"
+            bulb1.style.color="black"
+            bulb1.style.border="1px solid black"
+            bulb1.style.borderRadius="50%"
+            bulb1.style.height="200px"
+            bulb1.style.width="200px"  
+            bulb1.style.display="flex"
+            bulb1.style.justifyContent="center" 
+            bulb1.style.alignItems="center"         
+        }
+
+        let bulbb=function bulbb() {
+            let bulb1=document.getElementById("box")
+            bulb1.innerHTML="Bulb On"
+            bulb1.style.color="black"
+            bulb1.style.border="1px solid black"
+            bulb1.style.borderRadius="50%"
+            bulb1.style.backgroundColor="white"
+            bulb1.style.height="200px"
+            bulb1.style.width="200px"     
+            bulb1.style.display="flex"
+            bulb1.style.justifyContent="center" 
+            bulb1.style.alignItems="center"    
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //object by using function constructor
+        function Emp(ename, eid,esal,eadhar){
+            this.ename=ename;
+            this.eid=eid;
+            this.esal=esal;
+            this.eadhar=eadhar;
+            this.getDetails=function(){
+                return "emp name is "+this.ename+" emap id is "+this.eid+" emp sal is "+this.esal+" emp adhar is "+ this.eadhar            
+            }
+
+        }
+        let emp1=new Emp("Amar", "IF123", 22000, 1234)
+        console.log(emp1);
+        let emp2=new Emp("Akbar", "IF124", 25000, 1235)
+        console.log(emp2);
+        let emp3=new Emp("vaibs", "IF223", 21000, 1234)
+        console.log(emp1);
+        let emp4=new Emp("sunil", "IF111", 24000, 1235)
+        console.log(emp2);
+        let emp5=new Emp("pankaj", "IF112", 23000, 1234)
+        console.log(emp1);
+        let emp6=new Emp("ankur", "IF113", 25000, 1235)
+        console.log(emp2);
+        let emp7=new Emp("raj", "IF114", 22000, 1234)
+        console.log(emp1);
+        let emp8=new Emp("sumit", "IF115", 25000, 1235)
+        console.log(emp2);
+        let emp9=new Emp("aditya", "IF116", 22000, 1234)
+        console.log(emp1);
+        let emp10=new Emp("humera", "IF117", 25000, 1235)
+        console.log(emp2);
+        console.log(emp2.ename);
+        emp2.ename="Anthany"
+        console.log(emp2);
+        console.log(emp1.getDetails());
+        console.log(emp2.getDetails());
+        console.log(emp3.getDetails());
+        console.log(emp4.getDetails());
+        console.log(emp5.getDetails());
+        console.log(emp6.getDetails());
+        console.log(emp7.getDetails());
+        console.log(emp8.getDetails());
+        console.log(emp9.getDetails());
+        console.log(emp10.getDetails());
+
+
+
+    </script>
+</body>
+</html>

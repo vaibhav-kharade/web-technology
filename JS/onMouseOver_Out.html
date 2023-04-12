@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 300px;
+            width: 300px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" onmouseover="getMouseOver()" onmouseout="getMouseOut()"></div>
+    <script>
+        function getMouseOver() {
+            let ele=document.getElementById("box")
+            ele.style.width="200px"
+            ele.style.height="200px"
+            ele.style.border="1px solid red"
+            ele.style.backgroundColor="hotpink"
+        }
+        function getMouseOut() {
+            let ele=document.getElementById("box")
+            ele.style.width="200px"
+            ele.style.height="200px"
+            ele.style.border="1px solid red"
+            ele.style.backgroundColor="yellow"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //object by using function constructor
+        function Emp(ename, eid,esal,eadhar){
+            this.ename=ename;
+            this.eid=eid;
+            this.esal=esal;
+            this.eadhar=eadhar;
+            this.getDetails=function(){
+                return "emp name is "+this.ename+" emap id is "+this.eid+" emp sal is "+this.esal+" emp adhar is "+ this.eadhar            
+            }
+
+        }
+        let emp1=new Emp("Amar", "IF123", 22000, 1234)
+        console.log(emp1);
+        let emp2=new Emp("Akbar", "IF124", 25000, 1235)
+        console.log(emp2);
+        console.log(emp2.ename);
+        emp2.ename="Anthany"
+        console.log(emp2);
+        console.log(emp2.getDetails());
+
+        // emp1.name="Vaibhav"
+        // console.log(emp1);
+    </script>
+</body>
+</html>

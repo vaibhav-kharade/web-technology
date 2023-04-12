@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let country={
+        MH:{
+            cm:"ES",
+            district:37,
+            Capital:"Mumbai"
+        },
+       Gujarat:{
+        cm:"Bhupendrabhai Patel",
+        distict:33,
+        Capital:"Gandhinagr"
+        },
+        Goa:{
+            cm:"Pramod Pandurang Sawant",
+            district:2,
+            Capital:"Panaji"
+        },
+        Assam:{
+            cm:"Dr. Himanta Biswa Sarma",
+            district:31,
+            Capital:"Disapur"
+        },
+        ArunachalPradesh:{
+            cm:"Pema Khandu ",
+            district:26,
+            Capital:"Itanagar"
+        },
+        AndhraPradesh:{
+            cm:"Y.S Jagan Mohan Reddy",
+            district:26,
+            Capital:"Amravati"
+        },
+        Bihar:{
+            cm:"Nitish Kumar",
+            district:38,
+            Capital:"Patna"
+        }
+
+    }
+    console.log(typeof country);;
+        console.log(country.Capital);
+        console.log(country.district);
+        country.cm="Red";//mutable in nature
+        console.log(country);
+        country.cm=12.5;
+        console.log(country);
+    </script>
+
+</body>
+</html>
