@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            border: 1px solid;
+            background-color: antiquewhite;
+            background-image: url(./netflixLogBackground_Image.jpg);
+        }
+        #gfcontainer{
+            height: 100vh;
+            width: 100%;
+            border: 1px solid;
+            background-image: linear-gradient(to top, rgba(0,0,0,0.8)0,rgba(0,0,0,0.4)60%, rgba(0,0,0,0.8)100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #parent{
+            height: 500px;
+            width: 450px;
+            /* border: 1px solid; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+        }
+        #child{
+            height: 450px;
+            width: 350px;
+            /* border: 1px solid; */
+        }
+        h1{}
+        #inputcontainer{}
+        #inputcontainer input{
+            margin-top: 15px;
+            padding: 15px;
+            width: 350px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(73, 73, 73);
+            color: white;
+        }
+        #signin{
+            background-color: red;
+            border: none;
+            border-radius: 5px;
+            margin-top: 40px;
+            padding: 10px;
+            color: white;
+            font-size: 20px;
+            width: 350px;
+        }
+        #checkneedcontainer{
+            display: flex;
+            justify-content: space-between;
+            /* color: white; */
+            color: rgb(167, 169, 169);
+            margin-top: 10px;
+        }
+        #checkneedcontainer a{
+            color: rgb(167, 169, 169);
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        #newuser{
+            display: flex;
+            margin-top: 50px;
+            color: rgb(167, 169, 169);
+            font-size: 18px;
+        }
+        #paragraph{
+            margin-top: 20px;
+            /* display: flex; */
+            color: rgb(167, 169, 169);
+        }
+        #paragraph a{
+            color: blue;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="gfcontainer" id="gfcontainer">
+        <form action="">
+          <!-- <img src="/CSS/Netflix-logo-red-black-png.png" alt="" style=" height: 90px; ;"> -->
+          <div class="parent" id="parent">
+            <div class="child" id="child">
+              <h1>Sign in</h1>
+
+              <div class="inputcontainer" id="inputcontainer">
+                <input type="email" name="" id="email" placeholder="Email or phone number" /><br>
+                <input type="password" name="" id="pass" placeholder="Password"/><br>
+            </div>
+            <input type="button" value="Sign in" id="signin" />
+
+              <div class="checkneedcontainer" id="checkneedcontainer">
+                <div class="checkboxcontainer" id="checkboxcontainer">
+                  <input type="checkbox" name="" id="checkbox" />
+                  <label for="">Remeber me</label>
+                </div>
+                <a href="https://www.netflix.com/in/LoginHelp">Need help?</a>
+              </div>
+              <div class="newuser" id="newuser">
+                <p>New to Netflix?</p>
+                <a href="https://www.netflix.com/in/">Sign up now.</a>
+              </div>
+              <div class="paragraph" id="paragraph">
+                <p>
+                  This page is protected by Google reCAPTCHA to ensure you're
+                  not a bot.
+                  <a href="#">Learn more.</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
